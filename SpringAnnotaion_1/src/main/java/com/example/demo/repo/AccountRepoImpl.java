@@ -40,7 +40,15 @@ public class AccountRepoImpl implements AccountRepo {
 	public void updateAccount(int id,int balance) {
 		// TODO Auto-generated method stub
 		String query = "update account set balance="+balance+" where id="+id+"";
-		jdbcTenplate.update(query);
+		int result=jdbcTenplate.update(query);
+		if(result==0)
+		{
+			System.out.println("no account with that id");
+		}
+		else
+		{
+			System.out.println("successfuly updated");
+		}
 	}
 
 
@@ -48,8 +56,15 @@ public class AccountRepoImpl implements AccountRepo {
 	public void deleteAccount(int id) {
 		// TODO Auto-generated method stub
 		String query = "delete from account where accountNumber="+id+"";
-		jdbcTenplate.update(query);
-		
+		int result=jdbcTenplate.update(query);
+		if(result==0)
+		{
+			System.out.println("no account with that id");
+		}
+		else
+		{
+			System.out.println("successfuly deleted");
+		}
 	}
 
 
