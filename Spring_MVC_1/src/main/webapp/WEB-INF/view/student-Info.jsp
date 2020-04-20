@@ -10,6 +10,9 @@
 Student ID : ${student.id}<br>
 Student Firstname : ${student.firstName}<br>
 Student Lastname : ${student.lastName}<br>
-Student Email : ${student.email}
+Student Email : ${student.email}<br>
+Student Country : ${student.country}<br>
+Student Langugae : ${student.favouritelanguage}
+
 </body>
 </html>
