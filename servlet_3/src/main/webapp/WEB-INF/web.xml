@@ -1,0 +1,32 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ServletController</servlet-name>
+  	<display-name>ServletController</display-name>
+  	<description></description>
+  	<servlet-class>com.example.controller.ServletController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>succes</servlet-name>
+  	<display-name>succes</display-name>
+  	<description></description>
+  	<servlet-class>com.example.controller.succes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletController</servlet-name>
+  	<url-pattern>/controller.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>succes</servlet-name>
+  	<url-pattern>/succes.view</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+  <welcome-file>
+  index.jsp
+  </welcome-file>
+  </welcome-file-list>
+</web-app>
