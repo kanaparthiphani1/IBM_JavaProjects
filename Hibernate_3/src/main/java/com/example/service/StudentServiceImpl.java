@@ -1,10 +1,10 @@
-package com.mycompany._04_20_2.service;
+package com.example.service;
 
 import java.util.List;
 
-import com.mycompany._04_20_2.dao.StudentDAO;
-import com.mycompany._04_20_2.dao.StudentDAOImpl;
-import com.mycompany._04_20_2.domain.Student;
+import com.example.dao.StudentDAO;
+import com.example.dao.StudentDAOImpl;
+import com.example.domain.Student;
 
 public class StudentServiceImpl implements StudentService {
 

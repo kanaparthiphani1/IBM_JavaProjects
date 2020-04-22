@@ -1,12 +1,13 @@
-package com.mycompany._04_20_2.service;
+package com.example.dao;
 
 import java.util.List;
 
-import com.mycompany._04_20_2.domain.Student;
+import com.example.domain.Student;
 
-public interface StudentService {
-
+public interface StudentDAO {
+	
 	public Student createStudent(Student student);
 	public List<Student> getAllStudent();
 	public Student getStudentByID(String studnetID);
+
 }

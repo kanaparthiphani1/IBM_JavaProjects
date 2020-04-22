@@ -1,10 +1,10 @@
-package com.mycompany._04_20_2.factory;
+package com.example.factory;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import com.mycompany._04_20_2.domain.Student;
+import com.example.domain.Student;
 
 public class MyHibernateFactory {
 

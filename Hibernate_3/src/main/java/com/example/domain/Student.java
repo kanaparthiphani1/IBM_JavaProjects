@@ -1,4 +1,4 @@
-package com.mycompany._04_20_2.domain;
+package com.example.domain;
 
 import java.io.Serializable;
 import javax.persistence.Column;

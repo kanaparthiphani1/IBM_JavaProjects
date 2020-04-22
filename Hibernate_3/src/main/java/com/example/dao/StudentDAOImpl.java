@@ -1,12 +1,12 @@
-package com.mycompany._04_20_2.dao;
+package com.example.dao;
 
 import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-import com.mycompany._04_20_2.domain.Student;
-import com.mycompany._04_20_2.factory.MyHibernateFactory;
+import com.example.domain.Student;
+import com.example.factory.MyHibernateFactory;
 
 public class StudentDAOImpl implements StudentDAO {
 	

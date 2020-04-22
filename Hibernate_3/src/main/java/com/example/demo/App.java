@@ -1,4 +1,4 @@
-package com.mycompany._04_20_2;
+package com.example.demo;
 
 import java.io.Serializable;
 import java.util.List;
@@ -9,9 +9,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import com.mycompany._04_20_2.domain.Student;
-import com.mycompany._04_20_2.service.StudentService;
-import com.mycompany._04_20_2.service.StudentServiceImpl;
+import com.example.domain.Student;
+import com.example.service.StudentService;
+import com.example.service.StudentServiceImpl;
 
 public class App {
 	private static StudentService service=null;

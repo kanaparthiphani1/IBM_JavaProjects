@@ -35,7 +35,7 @@ public class RegisterLeague extends HttpServlet {
 		String s_year = request.getParameter("l_year");
 		int year = Integer.parseInt(s_year);
 		String season = request.getParameter("l_seasons");
-		if(l_name.length()>7 && year>2020 )
+		if(l_name.length()>7 && year>2020 && season.equalsIgnoreCase("winter") )
 		{
 			RequestDispatcher dis = request.getRequestDispatcher("success.html");
 			dis.forward(request, response);
