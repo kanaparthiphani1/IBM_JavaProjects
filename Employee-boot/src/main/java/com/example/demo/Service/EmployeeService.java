@@ -1,10 +1,10 @@
-package com.example.demo.dao;
+package com.example.demo.Service;
 
 import java.util.List;
 
 import com.example.demo.model.Employee;
 
-public interface EmployeeDao {
+public interface EmployeeService {
 
 	
 	public List<Employee> displayAll();

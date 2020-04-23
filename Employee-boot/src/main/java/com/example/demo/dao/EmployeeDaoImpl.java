@@ -31,8 +31,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	@Override
 	public List<Employee> displayAll() {
 		// TODO Auto-generated method stub
-		Session session = entityManager.unwrap(Session.class);
-		Query qry=session.createQuery("from Employee",Employee.class);
+		Query qry=entityManager.createQuery("from Employee",Employee.class);
 		return qry.getResultList();
 	}
 	
@@ -41,9 +40,23 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	@Transactional
 	public Employee createEmployee(Employee e) {
 		// TODO Auto-generated method stub
-		Session session = entityManager.unwrap(Session.class);
-		session.saveOrUpdate(e);
+		entityManager.merge(e);
 		return e;
+	}
+
+
+	@Override
+	public Employee findByid(int id) {
+		// TODO Auto-generated method stub
+		return entityManager.find(Employee.class, id);
+	}
+
+
+	@Override
+	@Transactional
+	public void delete(Employee e) {
+		// TODO Auto-generated method stub
+		entityManager.remove(e);
 	}
 
 }

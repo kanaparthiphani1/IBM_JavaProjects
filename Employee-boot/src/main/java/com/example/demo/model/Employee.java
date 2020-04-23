@@ -7,13 +7,19 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 @Table(name="employee")
+@ApiModel(description = "All details about employee")
 public class Employee {
 
+	@ApiModelProperty(notes = "This is EMployee Id")
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@ApiModelProperty(notes = "This is EMployee Name")
 	@Column(name="name")
 	private String name;
 	public Employee(String name, String email) {
@@ -21,6 +27,7 @@ public class Employee {
 		this.name = name;
 		this.email = email;
 	}
+	@ApiModelProperty(notes = "This is EMployee Email")
 	@Column(name="email")
 	private String email;
 	public int getId() {
