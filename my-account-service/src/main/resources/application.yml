@@ -1,0 +1,9 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: my-account-service
+eureka:
+  client:
+    register-with-eureka: true
+
