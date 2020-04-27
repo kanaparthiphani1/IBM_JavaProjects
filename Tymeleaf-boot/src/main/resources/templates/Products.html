@@ -10,22 +10,26 @@
 <body>
 <div class="container">
     <div th:if="${not #lists.isEmpty(products)}">
-     <h2>Product List</h2>
+     <h2 align="center">Product List</h2>
         <table class="table">
             <tr>
                 <th>Id</th>
                 <th>Name</th>
                 <th>Price</th>
-                
+                <th>List</th>
             </tr>
-            <tr th:each="product : ${products}" class="thead-dark">
+            <tr th:each="product : ${products}" class="thread-dark">
                 <td th:text="${product.id}"></td>
                 <td th:text="${product.name}"></td>
                 <td th:text="${product.price}"></td>
-                
+                <td> <a th:href="${'/product/' + product.id}">View</a> </td>
             </tr>
         </table>
     
+    </div>
+    <div >
+    
+    <a href="/product/new">Add new Product</a>
     </div>
 
 </div>

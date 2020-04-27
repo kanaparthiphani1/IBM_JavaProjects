@@ -8,4 +8,6 @@ public interface ProductService {
 
 	public List<Product> showAll();
 	public void add(Product p);
+	public Product showByid(String id);
+
 }

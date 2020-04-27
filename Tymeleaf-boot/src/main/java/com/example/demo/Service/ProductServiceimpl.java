@@ -41,4 +41,10 @@ public class ProductServiceimpl implements ProductService {
 		
 	}
 
+	@Override
+	public Product showByid(String id) {
+		// TODO Auto-generated method stub
+		return productDao.findById(id).get();
+	}
+
 }
