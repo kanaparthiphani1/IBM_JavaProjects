@@ -47,4 +47,10 @@ public class ProductServiceimpl implements ProductService {
 		return productDao.findById(id).get();
 	}
 
+	@Override
+	public void productDelete(Product p) {
+		// TODO Auto-generated method stub
+		productDao.delete(p);
+	}
+
 }
