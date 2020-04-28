@@ -1,0 +1,12 @@
+eureka:
+  client:
+    serviceUrl:
+      register-with-eureka: true
+server:
+  port: 8767
+spring:
+  application:
+    name: service-album
+  cloud:
+    config:
+      uri: http://localhost:8888
