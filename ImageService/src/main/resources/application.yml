@@ -1,0 +1,16 @@
+eureka:
+  client:
+    serviceUrl:
+      register-with-eureka: true
+server:
+  port: 8763
+spring:
+  application:
+    name: service-image
+  cloud:
+    config:
+      uri: http://localhost:8888
+  h2:
+    console:
+      enabled: true
+      path: /h2
