@@ -1,11 +1,16 @@
 package com.example.demo.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import lombok.Data;
 
 @Data
 public class Users {
 
 
+	
 	private String userName;
 	private String password;
 	private String roles;

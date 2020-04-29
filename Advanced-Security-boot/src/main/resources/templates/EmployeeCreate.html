@@ -9,27 +9,23 @@
 </head>
 <body>
 <div class="container" >
-<form th:object="${user}" th:action="@{/register}" method="post">
-<h2 align= "center">Login</h2>
+<form th:object="${employee}" th:action="@{/register-employee}" method="post">
+<h2 align= "center">Employee-Registration</h2>
+<input type="hidden" th:field="*{id}"/>
 <label class="col-sm-5 control-label">Name</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" th:field="*{userName}"/>
+                    <input type="text" class="form-control" th:field="*{name}"/>
                 </div>
                 
- <label class="col-sm-1 control-label">Password</label>
+ <label class="col-sm-1 control-label">Age</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" th:field="*{password}"/>
+                    <input type="text" class="form-control" th:field="*{age}"/>
                 </div>
-                
- <label class="col-sm-1 control-label">Role</label>
-                <div class="col-sm-9">
-                    <label class="checkbox-inline"><input type="checkbox" value="ROLE_ADMIN" th:field="*{roles}">Admin</label>
- 					<label class="checkbox-inline"><input type="checkbox" value="ROLE_USER" th:field="*{roles}">User</label>
-                </div>               
+             
                 
                 <div>        <br></div>
    <div style = "position:relative; left:10px; right:60px; top:2px; ">
- <button type="submit" class="btn btn-outline-success">Login</button>
+ <button type="submit" class="btn btn-outline-success">Submit</button>
       </div>
             
             </form>

@@ -26,10 +26,14 @@ public class WebConfig  extends WebSecurityConfigurerAdapter{
 	public void configure(HttpSecurity http) throws Exception
 	{
 		http.csrf().disable().authorizeRequests()
-			.antMatchers("/admin").hasRole(ADMIN)
-			.antMatchers("/users").hasAnyRole(ADMIN,USER)
+			.antMatchers("/admin/**").hasRole(ADMIN)
+			.antMatchers("/users/**").hasAnyRole(ADMIN,USER)
 			.antMatchers("/", "/register-user").permitAll()
-			.and().formLogin();
+			.and().formLogin()
+			.and().logout().permitAll()
+			.logoutUrl("/j_spring_security_logout")  
+	        .logoutSuccessUrl("/");
+			
 	}
 	
 	
