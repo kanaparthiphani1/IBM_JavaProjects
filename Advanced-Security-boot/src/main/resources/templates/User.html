@@ -10,7 +10,7 @@
 <body>
 <div class="container" >
 <form th:object="${user}" th:action="@{/register}" method="post">
-<h2 align= "center">Login</h2>
+<h2 align= "center">Registration</h2>
 <label class="col-sm-5 control-label">Name</label>
                 <div class="col-sm-9">
                     <input type="text" class="form-control" th:field="*{userName}"/>
@@ -29,7 +29,7 @@
                 
                 <div>        <br></div>
    <div style = "position:relative; left:10px; right:60px; top:2px; ">
- <button type="submit" class="btn btn-outline-success">Login</button>
+ <button type="submit" class="btn btn-outline-success">Register</button>
       </div>
             
             </form>

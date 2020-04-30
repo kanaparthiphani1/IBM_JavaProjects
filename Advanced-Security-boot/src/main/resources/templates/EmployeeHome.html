@@ -17,21 +17,27 @@
 </head>
 <body>
 
-<nav class="navbar navbar-dark bg-dark">
-		<a class="navbar-brand" href="/index">User App</a>
-		
-			<ul class="navbar-nav mr-auto">
-				
-				<li class="nav-item"><a class="nav-link" href="/user/showall">Show all </a></li>	
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">User Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" href="/user/showall">Show all </a></li>	
 				<li class="nav-item"><a class="nav-link" href="/user/showbyId">Show by Id </a></li>	
-				<form th:action="@{/logout}" method="post">
+      
+    </ul>
+    <span class="navbar-item">
+      <form th:action="@{/logout}" method="post">
 	
 					<input type="submit" value="Logout" />
 					</form>
-			</ul>
-	</nav>
-
-
+    </span>
+  </div>
+</nav>
 <!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
