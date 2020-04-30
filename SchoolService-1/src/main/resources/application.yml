@@ -1,0 +1,17 @@
+server:
+  port: 7777
+spring:
+  application:
+    name: service-school
+  boot:
+    admin:
+      client:
+        url: http://localhost:9999
+  cloud:
+    consul:
+      discovery:
+        register: true
+        service-name: service-school
+      host: localhost
+      port: 8500
+      

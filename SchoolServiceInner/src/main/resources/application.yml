@@ -1,0 +1,24 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: service-student
+  boot:
+    admin:
+      client:
+        url: http://localhost:9999
+  cloud:
+    consul:
+      discovery:
+        register: true
+        service-name: service-student
+      host: localhost
+      port: 8500
+  datasource:
+    url: jdbc:mysql://localhost:3306/java
+    username: root
+    password: Ardninahp@1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+ 
+ 
+  
